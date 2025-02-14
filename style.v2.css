@@ -1,3 +1,4 @@
+
         /* General Styles */
         body {
             font-family: Arial, sans-serif;
@@ -28,6 +29,8 @@
             background-color: lightgray;
             text-align: left;
             box-sizing: border-box;
+            flex: 1;
+            min-width: 300px;
         }
 
         /* Section Title */
@@ -49,6 +52,9 @@
 
         /* Desktop View (992px and above) */
         @media (min-width: 992px) {
+            .container {
+                flex-direction: row;
+            }
             .box {
                 width: 30%;
             }
@@ -56,6 +62,9 @@
 
         /* Tablet View (768px - 991px) */
         @media (min-width: 768px) and (max-width: 991px) {
+            .container {
+                flex-direction: row;
+            }
             .box {
                 width: 45%;
             }
@@ -66,6 +75,9 @@
 
         /* Mobile View (≤ 767px) */
         @media (max-width: 767px) {
+            .container {
+                flex-direction: column;
+            }
             .box {
                 width: 100%;
             }
