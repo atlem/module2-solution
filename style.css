@@ -1,10 +1,9 @@
-/* General Styling */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
-    
 }
 
 h1 {
@@ -16,7 +15,7 @@ h1 {
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 20px;
 }
 
@@ -31,7 +30,7 @@ h1 {
     box-sizing: border-box;
 }
 
-/* Section Titles */
+/* Section Title */
 .title {
     position: absolute;
     top: 0;
@@ -43,14 +42,19 @@ h1 {
     border: 1px solid black;
 }
 
-/* Desktop View (3 Sections in 1 Row) */
+/* Background Colors */
+.chicken .title { background-color: #d9534f; }  /* Red */
+.beef .title { background-color: #c9302c; }     /* Dark Red */
+.sushi .title { background-color: #f0ad4e; }    /* Orange */
+
+/* Desktop View (992px and above) */
 @media (min-width: 992px) {
     .box {
         width: 30%;
     }
 }
 
-/* Tablet View (2 Sections in 1st Row, 1 Section in 2nd Row) */
+/* Tablet View (768px - 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
     .box {
         width: 45%;
@@ -61,7 +65,7 @@ h1 {
     }
 }
 
-/* Mobile View (Each Section Takes Full Row) */
+/* Mobile View (≤ 767px) */
 @media (max-width: 767px) {
     .box {
         width: 100%;
