@@ -24,7 +24,6 @@
         }
         
         .col {
-         position: relative;
             border: 1px solid black;
             padding: 20px;
             margin:20px
@@ -38,8 +37,6 @@
         /* Section Title */
         .title {
             position: absolute;
-            top: 0;
-            right: 0;
          width:50px;
             background-color: darkgray;
             color: white;
