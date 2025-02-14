@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Menu</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-        /* General Styles */
+ /* General Styles */
+        * {
+            box-sizing: border-box;
+        }
         body {
             font-family: Arial, sans-serif;
             text-align: center;
@@ -19,23 +14,25 @@
             margin: 20px 0;
         }
 
-        /* Container */
-        .container {
+        /* Grid System */
+        .row {
+         position: relative;
+            width: 100%;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 20px;
+            justify-content: space-around;
+            padding: 10px;
         }
-
-        /* Sections */
-        .box {
-            position: relative;
+        
+        .col {
             border: 1px solid black;
             padding: 20px;
-            margin: 10px;
+            margin:20px
             background-color: lightgray;
             text-align: left;
             box-sizing: border-box;
+            flex: 1 1 30%; /* Default for large screens */
+            min-width: 250px;
         }
 
         /* Section Title */
@@ -43,6 +40,7 @@
             position: absolute;
             top: 0;
             right: 0;
+         width:50px;
             background-color: darkgray;
             color: white;
             padding: 5px 10px;
@@ -55,26 +53,24 @@
         .beef .title { background-color: #c9302c; }     /* Dark Red */
         .sushi .title { background-color: #f0ad4e; }    /* Orange */
 
-        /* Desktop View (992px and above) */
+        /* Responsive Layout */
         @media (min-width: 992px) {
-            .box {
-                width: 32%;
+            .col {
+                flex: 1 1 30%;
             }
         }
 
-        /* Tablet View (768px - 991px) */
         @media (min-width: 768px) and (max-width: 991px) {
-            .box {
-                width: 48%;
+            .col {
+                flex: 1 1 45%;
             }
-            .box:last-child {
-                width: 100%;
+            .col:last-child {
+                flex: 1 1 100%;
             }
         }
 
-        /* Mobile View (≤ 767px) */
         @media (max-width: 767px) {
-            .box {
-                width: 100%;
+            .col {
+                flex: 1 1 100%;
             }
         }
