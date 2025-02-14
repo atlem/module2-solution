@@ -14,7 +14,7 @@
             margin: 20px 0;
         }
 
-       
+       p {margin-top:50;}
         .row {
             width: 100%;
             display: flex;
