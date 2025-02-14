@@ -16,7 +16,6 @@
 
         /* Grid System */
         .row {
-         position: relative;
             width: 100%;
             display: flex;
             flex-wrap: wrap;
@@ -38,8 +37,6 @@
         /* Section Title */
         .title {
             position: absolute;
-            top: 0;
-            right: 0;
          width:50px;
             background-color: darkgray;
             color: white;
