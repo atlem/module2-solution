@@ -1,4 +1,4 @@
- /* General Styles */
+ 
         * {
             box-sizing: border-box;
         }
@@ -14,7 +14,7 @@
             margin: 20px 0;
         }
 
-        /* Grid System */
+       
         .row {
             width: 100%;
             display: flex;
@@ -26,15 +26,15 @@
         .col {
             border: 1px solid black;
             padding: 20px;
-            margin:20px
+            margin: 20px;
             background-color: lightgray;
             text-align: left;
             box-sizing: border-box;
-            flex: 1 1 30%; /* Default for large screens */
+            flex: 1 1 30%; 
             min-width: 250px;
         }
 
-        /* Section Title */
+       
         .title {
             position: absolute;
          width:50px;
@@ -45,12 +45,12 @@
             border: 1px solid black;
         }
 
-        /* Background Colors */
-        .chicken .title { background-color: #d9534f; }  /* Red */
-        .beef .title { background-color: #c9302c; }     /* Dark Red */
-        .sushi .title { background-color: #f0ad4e; }    /* Orange */
+        
+        .chicken .title { background-color: #d9534f; }  
+        .beef .title { background-color: #c9302c; }     
+        .sushi .title { background-color: #f0ad4e; }    
 
-        /* Responsive Layout */
+        
         @media (min-width: 992px) {
             .col {
                 flex: 1 1 30%;
