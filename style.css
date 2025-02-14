@@ -35,6 +35,9 @@
 
         /* Section Title */
         .title {
+            position: absolute;
+            top: 0;
+            right: 0;
             background-color: darkgray;
             color: white;
             padding: 5px 10px;
