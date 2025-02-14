@@ -43,8 +43,8 @@
         }
 
         .title {
-            top: 0;
-            right: 0;
+            top: -1px;
+            right: -1px;
             position: absolute;
             width:100px;
             background-color: darkgray;
